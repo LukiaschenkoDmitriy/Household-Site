@@ -1,0 +1,108 @@
+.header-wrapper {
+    background: #254336;
+    .header {
+        display: flex;
+        justify-content: space-between;
+
+        .content {
+            display: flex;
+            align-items: center;
+            a {
+                font-weight: bold;
+                margin: 0px 10px;
+                text-decoration: none;
+                color: white;
+                transition: color .5s ease;
+
+                &:hover {
+                    color: #B7B597;
+                }
+            }
+        }
+
+        .mobile-content {
+            display: none;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    #mobileHeaderMenu {
+        background: #254336;
+
+        .offcanvas-header {
+            display: flex;
+            justify-content: space-between;
+            .offcanvas-title {
+                color: white;
+            }
+
+            .menu-button {
+                svg {
+                    width: 25px;
+                    height: 25px;
+                    path {
+                        fill: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .offcanvas-body {
+        .content {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                font-weight: bold;
+                padding: 10px 0px;
+                text-decoration: none;
+                color: white;
+                transition: color .5s ease;
+
+                &:hover {
+                    color: #B7B597;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header-wrapper {
+        .header {
+            .content {
+                display: none;
+            }
+            
+            .mobile-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                    svg {
+                        width: 50px;
+                        height: 50px;
+                        path {
+                            fill: white;
+                            transition: fill .5s ease;
+                        }
+                    }
+
+                    &:hover {
+                        svg {
+                            path {
+                                fill: #B7B597;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

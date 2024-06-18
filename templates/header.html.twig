@@ -1,0 +1,48 @@
+{% block header %}
+    <div class="header-wrapper">
+        <div class="container">
+            <div class="header">
+                <a href="">
+                    <img class="logo" src="{{ asset('images/logo.svg') }}" alt="">
+                </a>
+                <div class="content">
+                    <a href="">Strona główna</a>
+                    <a href="">O Nas</a>
+                    <a href="">Oferta</a>
+                    <a href="">Warzywa Bio</a>
+                    <a href="">Aktualności</a>
+                    <a href="">Galeria</a>
+                    <a href="">Kontakt</a>
+                </div>
+                <div class="mobile-content">
+                    <a data-bs-toggle="offcanvas" href="#mobileHeaderMenu" role="button" aria-controls="mobileHeaderMenu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileHeaderMenu" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                <a class='menu-button' type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                      <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="offcanvas-body">
+                <div class="content">
+                    <a href="">Strona główna</a>
+                    <a href="">O Nas</a>
+                    <a href="">Oferta</a>
+                    <a href="">Warzywa Bio</a>
+                    <a href="">Aktualności</a>
+                    <a href="">Galeria</a>
+                    <a href="">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
