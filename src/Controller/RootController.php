@@ -23,4 +23,9 @@ class RootController extends AbstractController
     public function offer(): Response {
         return $this->render("page/offer.html.twig");
     }
+
+    #[Route("/news", name:"app_news")]
+    public function news(): Response {
+        return $this->render("page/news.html.twig");
+    }
 }
