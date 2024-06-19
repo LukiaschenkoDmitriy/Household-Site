@@ -1,0 +1,12 @@
+.about-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .in-dev {
+        color: #6B8A7A;
+        font-weight: bold;
+        font-size: 30px;
+    }
+}

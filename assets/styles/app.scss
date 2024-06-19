@@ -1,6 +1,8 @@
 @import "./component/header";
 @import "./component/footer";
 @import "./page/main_page";
+@import "./page/about_page";
+@import "./page/offer_page";
 
 body {
     background-color: lightgray;
@@ -9,7 +11,7 @@ body {
 html, body {
     height: 100%;
     margin: 0;
-    background: #6B8A7A;
+    background: white;
 }
 
 .wrapper {
