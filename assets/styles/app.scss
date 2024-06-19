@@ -1,5 +1,6 @@
 @import "./component/header";
 @import "./component/footer";
+@import "./page/main_page";
 
 body {
     background-color: lightgray;
@@ -8,6 +9,7 @@ body {
 html, body {
     height: 100%;
     margin: 0;
+    background: #B7B597;
 }
 
 .wrapper {

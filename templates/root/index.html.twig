@@ -1,20 +1,66 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello RootController!{% endblock %}
+{% block title %}Strona główna!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>/home/dmytrii/Desktop/Project1/project/src/Controller/RootController.php</code></li>
-        <li>Your template at <code>/home/dmytrii/Desktop/Project1/project/templates/root/index.html.twig</code></li>
-    </ul>
+<div class="main-page">
+    <div class="slider">
+        <video class="video_slider" width="100%" autoplay muted loop>
+            <source src="{{ asset("videos/slayder.mp4") }}" type="video/mp4">
+        </video>
+        <div class="video_keywords">
+            <section class="splide " aria-labelledby="carousel-heading">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <p>Gospodarstwo GŁĄB - Kompleksowe Usługi Rolne na Najwyższym Poziomie</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p>Kopanie i Siew Buraków - Profesjonalizm od Gospodarstwa GŁĄB</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p>Koszenie Zbóż z Odwozem - Twój Partner w Rolnictwie</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p>Siew Zbóż i Rzepaku - Precyzja i Efektywność</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p>Uprawa Bezorkowa - Innowacyjne Metody Rolnicze</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p>Talerzowanie i Orka - Profesjonalne Usługi dla Rolników</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p>Gospodarstwo GŁĄB - Rolnictwo z Pasją i Doświadczeniem</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p>Twoje Zboża, Nasza Troska - Gospodarstwo GŁĄB</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p>Nowoczesne Rolnictwo - Kopanie, Siew, Uprawa bez Orki</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p>Gospodarstwo GŁĄB - Twój Zaufany Partner w Usługach Rolnych</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p>Profesjonalne Koszenie Zbóż z Odwozem - Gospodarstwo GŁĄB</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p>Efektywny Siew Zbóż i Rzepaku - Gospodarstwo GŁĄB</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p>Uprawa Bezorkowa - Oszczędność Czasu i Zasobów</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p>Talerzowanie i Orka - Szybko i Skutecznie</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p>Gospodarstwo GŁĄB - Innowacyjne Rozwiązania Rolnicze</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
 </div>
 {% endblock %}
