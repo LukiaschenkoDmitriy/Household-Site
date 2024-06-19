@@ -47,4 +47,34 @@
             }
         }
     }
+
+    .services {
+        margin: 50px 0px;
+        color: white;
+
+        h3 {
+            border-bottom: 1px solid;
+            padding: 20px 0px;
+        }
+
+        .content {
+            .text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+            }
+
+            .photo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px 0px;
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
 }
