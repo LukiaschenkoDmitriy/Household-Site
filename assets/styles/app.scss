@@ -1,5 +1,21 @@
 @import "./component/header";
+@import "./component/footer";
 
 body {
     background-color: lightgray;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.body {
+    flex: 1;
 }

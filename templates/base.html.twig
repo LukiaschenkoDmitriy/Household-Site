@@ -15,8 +15,12 @@
         {% endblock %}
     </head>
     <body>
-        {% include 'header.html.twig' %}
-        {% block body %}{% endblock %}
-        {% include 'footer.html.twig' %}
+        <div class="wrapper">
+            {% include 'header.html.twig' %}
+            <div class="body">
+                {% block body %}{% endblock %}
+            </div>
+            {% include 'footer.html.twig' %}
+        </div>
     </body>
 </html>
