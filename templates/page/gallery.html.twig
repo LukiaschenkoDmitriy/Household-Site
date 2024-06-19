@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Galeria{% endblock %}
+
+{% block body %}
+<div class="gallery-page">
+    <div class="container">
+        <div class="gallery-content">
+            <div class="title">Galeria</div>
+            <div class="pswp-gallery pswp-gallery--single-column" id="gallery">
+                <div class="column">
+                    <a href="{{ asset("images/collection.png") }}"
+                        data-pswp-width="1080" 
+                        data-pswp-height="774" 
+                        target="_blank">
+                        <img src="{{ asset("images/collection.png") }}" alt="" />
+                    </a>
+                    <a href="{{ asset("images/beets.jpg") }}"
+                        data-pswp-width="1080" 
+                        data-pswp-height="774" 
+                        target="_blank">
+                        <img src="{{ asset("images/beets.jpg") }}" alt="" />
+                    </a>
+                    <a href="{{ asset("images/gallery/4.jpg") }}"
+                        data-pswp-width="1080" 
+                        data-pswp-height="774" 
+                        target="_blank">
+                        <img src="{{ asset("images/gallery/4.jpg") }}" alt="" />
+                    </a>
+                    <a href="{{ asset("images/gallery/5.jpg") }}"
+                        data-pswp-width="1080" 
+                        data-pswp-height="774" 
+                        target="_blank">
+                        <img src="{{ asset("images/gallery/5.jpg") }}" alt="" />
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="{{ asset("images/koparka.jpg") }}"
+                        data-pswp-width="1080" 
+                        data-pswp-height="774" 
+                        target="_blank">
+                        <img src="{{ asset("images/koparka.jpg") }}" alt="" />
+                    </a>
+                    <a href="{{ asset("images/orka.jpg") }}"
+                        data-pswp-width="1080" 
+                        data-pswp-height="774" 
+                        target="_blank">
+                        <img src="{{ asset("images/orka.jpg") }}" alt="" />
+                    </a>
+                    <a href="{{ asset("images/gallery/3.jpg") }}"
+                        data-pswp-width="1080" 
+                        data-pswp-height="774" 
+                        target="_blank">
+                        <img src="{{ asset("images/gallery/3.jpg") }}" alt="" />
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="{{ asset("images/rice.jpg") }}"
+                        data-pswp-width="1080" 
+                        data-pswp-height="774" 
+                        target="_blank">
+                        <img src="{{ asset("images/rice.jpg") }}" alt="" />
+                    </a>
+                     <a href="{{ asset("images/gallery/1.jpg") }}"
+                        data-pswp-width="1080" 
+                        data-pswp-height="774" 
+                        target="_blank">
+                        <img src="{{ asset("images/gallery/1.jpg") }}" alt="" />
+                    </a>
+                    <a href="{{ asset("images/gallery/2.jpg") }}"
+                        data-pswp-width="1080" 
+                        data-pswp-height="774" 
+                        target="_blank">
+                        <img src="{{ asset("images/gallery/2.jpg") }}" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

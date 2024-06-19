@@ -1,0 +1,40 @@
+.gallery-page {
+    margin: 50px;
+    .gallery-content {
+        .title {
+            text-align: center;
+            color: #6B8A7A;
+            font-weight: bold;
+            font-size: 35px;
+            text-transform: uppercase;
+        }
+
+        .pswp-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+            margin-top: 15px;
+            .column {
+                width: 33%;
+                height: 100%;
+                a {
+                    flex-basis: 33%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery-page .gallery-content .pswp-gallery .column {
+        width: 100%;
+    }
+    
+    .gallery-page .gallery-content .pswp-gallery .column a {
+        flex-basis: 100%;
+    }
+}
+

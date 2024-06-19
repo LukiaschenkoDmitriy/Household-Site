@@ -28,4 +28,9 @@ class RootController extends AbstractController
     public function news(): Response {
         return $this->render("page/news.html.twig");
     }
+
+    #[Route("/gallery", name:"app_gallery")]
+    public function gallery(): Response {
+        return $this->render("page/gallery.html.twig");
+    }
 }

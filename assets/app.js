@@ -12,8 +12,25 @@ import '@splidejs/splide/css';
 import Splide from '@splidejs/splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
-new Splide( '.splide', {
-    arrows: false,
-    speed: 2000,
-    type: "loop"
-} ).mount( { AutoScroll } );
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import "photoswipe/style.css";
+import PhotoSwipe from 'photoswipe';
+
+const splide = document.getElementsByClassName('splide');
+if (splide.length != 0) {
+    new Splide( '.splide', {
+        arrows: false,
+        speed: 2000,
+        type: "loop"
+    } ).mount( { AutoScroll } );
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#gallery',
+        children: 'a',
+        pswpModule: PhotoSwipe
+    });
+    
+    lightbox.init();
+})
