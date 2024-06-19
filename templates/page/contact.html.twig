@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Kontakt{% endblock %}
+
+{% block body %}
+<div class="contact-page">
+    <div class="container">
+        <div class="contact-content">
+            <div class="title">Kontakt</div>
+            <div class="content row">
+                <div class="text col-lg-6 col-md-12">
+                    <div class="name-content">
+                        <div class="name">Tomasz Głąb</div>
+                        <div class="action">Gospodarstwo rolne</div>
+                    </div>
+                    <div class="description">
+                        <div class="adress">żuków drugi 48, 23-110 krzczonów</div>
+                        <div class="phone">+48 669 620 697</div>
+                        <div class="email">warzywa@gr-glab.pl</div>
+                        <div class="site">www.gr-glab.pl</div>
+                    </div>
+                </div>
+                <div class="images col-lg-6 col-md-12">
+                    <img src="{{ asset('images/footer_contacts.png') }}" alt="">
+                    <img src="{{ asset('images/footer_information.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -33,4 +33,9 @@ class RootController extends AbstractController
     public function gallery(): Response {
         return $this->render("page/gallery.html.twig");
     }
+
+    #[Route("/contact", name:"app_contact")]
+    public function contact(): Response {
+        return $this->render("page/contact.html.twig");
+    }
 }
